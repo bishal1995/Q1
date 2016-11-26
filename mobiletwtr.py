@@ -44,7 +44,7 @@ loginReqHeader = {
 	'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36'
 }
 # session generation url
-sessionUrl = 'https://mobile.twitter.com/sessions/'
+sessionUrl = 'https://mobile.twitter.com/sessions'
 sessionRequest = requests.post(sessionUrl,headers=ReqHeaders,cookies=loginReqCookie,data=loginReqPayload)
 print(sessionRequest.content)
 print(sessionRequest.cookies)
